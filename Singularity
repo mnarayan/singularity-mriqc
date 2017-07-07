@@ -28,4 +28,4 @@ dpkg-reconfigure --frontend noninteractive tzdata
 #------------------------------------------------------------------------------
 # Fix shared library libGL.so.1
 #------------------------------------------------------------------------------
-#ln -s /usr/lib/x86_64-linux-gnu/mesa/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so.1
+ln -s /usr/lib/x86_64-linux-gnu/mesa/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so.1
