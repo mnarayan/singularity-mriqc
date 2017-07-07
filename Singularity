@@ -18,8 +18,8 @@ Version 0.9.6
 #------------------------------------------------------------------------------
 # Fix possible permission issue, from docker2singularity.sh code
 #------------------------------------------------------------------------------
-#find /* -maxdepth 0 -not -path '/dev*' -not -path '/proc*' -not -path '/sys*' -exec chmod a+r -R '{}' \;
-#find / -executable -perm -u+x,o-x -not -path '/dev*' -not -path '/proc*' -not -path '/sys*' -exec chmod a+x '{}' \;
+find /* -maxdepth 0 -not -path '/dev*' -not -path '/proc*' -not -path '/sys*' -exec chmod a+r -R '{}' \;
+find / -executable -perm -u+x,o-x -not -path '/dev*' -not -path '/proc*' -not -path '/sys*' -exec chmod a+x '{}' \;
 #------------------------------------------------------------------------------
 # Change timezone to Shanghai
 #------------------------------------------------------------------------------
