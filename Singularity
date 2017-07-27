@@ -10,9 +10,9 @@ From: poldracklab/mriqc:latest
 
 %labels
 Author zhifang.ye.fghm@gmail.com
-Build-date 7/7/2017
+Build-date 27/7/2017
 Vendor Ubuntu
-Version 0.9.6
+Version 0.9.7
 
 %post
 #------------------------------------------------------------------------------
