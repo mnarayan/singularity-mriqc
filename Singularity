@@ -20,3 +20,8 @@ Version 0.10.0
     #------------------------------------------------------------------------------
     ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
     dpkg-reconfigure --frontend noninteractive tzdata
+    #------------------------------------------------------------------------------
+    # Fix possible permission issue, from docker2singularity.sh code
+    #------------------------------------------------------------------------------
+    chmod -R a+rX /usr/local/miniconda
+    chmod +x /usr/local/miniconda/bin/*
