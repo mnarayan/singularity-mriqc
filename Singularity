@@ -10,9 +10,9 @@ From: poldracklab/mriqc:latest
 
 %labels
 Author zhifang.ye.fghm@gmail.com
-Build-date 1/12/2017
+Build-date 22/1/2018
 Vendor Ubuntu
-Version 0.10.0
+Version 0.10.1
 
 %post
     #------------------------------------------------------------------------------
@@ -25,3 +25,8 @@ Version 0.10.0
     #------------------------------------------------------------------------------
     chmod -R a+rX /usr/local/miniconda
     chmod +x /usr/local/miniconda/bin/*
+    #------------------------------------------------------------------------------
+    # Create local binding point for our HPC
+    #------------------------------------------------------------------------------
+    mkdir /seastor
+    mkdir /lustre
