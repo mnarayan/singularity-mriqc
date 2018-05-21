@@ -10,7 +10,7 @@ From: poldracklab/mriqc:latest
 
 %labels
 Author zhifang.ye.fghm@gmail.com
-Build-date 11/4/2018
+Build-date 21/5/2018
 Vendor Ubuntu
 Version 0.10.4
 
@@ -21,12 +21,8 @@ Version 0.10.4
     ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
     dpkg-reconfigure --frontend noninteractive tzdata
     #------------------------------------------------------------------------------
-    # Fix possible permission issue, from docker2singularity.sh code
-    #------------------------------------------------------------------------------
-    chmod -R a+rX /usr/local/miniconda
-    chmod +x /usr/local/miniconda/bin/*
-    #------------------------------------------------------------------------------
     # Create local binding point for our HPC
     #------------------------------------------------------------------------------
     mkdir /seastor
+    mkdir /brain
     mkdir /lustre
